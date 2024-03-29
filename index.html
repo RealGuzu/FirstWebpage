@@ -1,17 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>My first web page</title>
+
+        
 </head>
 
 <body>
     <main>
+        <!-- Add a heading for the page title -->
         <h1>Welcome to my first <a href="https://en.wikipedia.org/wiki/Web_page" target="_blank">webpage</a></h1>
-        <h2>What is a webpage?</h2>
-        <p>A webpage is a document on the web that is accessed in a web browser.</p>
-        <img src="Starbucks home concept.jpeg" style="max-width: 100%;height: auto;" alt="Starbucks concept">
 
+        <div class="lists">
+        <!-- Add a heading for the description -->
+        <h2>What is a webpage?</h2>
+        <p>
+            A webpage is a document on the web that is accessed in a web browser.
+        </p>
+
+        <!-- Add an image with alternative text -->
+        <img src="Starbucks home concept.jpeg" style="max-width: 100%; height: auto;" alt="Starbucks concept">
+
+        <!-- Add a heading for the benefits section -->
         <h2><strong>Benefits</strong> of a webpage</h2>
         <ul>
             <li>Brand Awareness</li>
@@ -20,26 +31,55 @@
             <li>Increases Sales</li>
         </ul>
 
-        <h2><strong>Disadvantages</strong> of a webpage </h2>
+        <!-- Add a heading for the disadvantages section -->
+        <h2><strong>Disadvantages</strong> of a webpage</h2>
         <ol>
             <li>There</li>
             <li>Really</li>
             <li>isn't</li>
-            <li>any</li>    
-        </ol>   
-        <form action="/submit-webpage-photo">
-               <label><input type="radio"> Retro
-            </label> 
-               <label><input type="radio"> Moder
-            </label> 
-                <br>
+            <li>any</li>
+        </ol>
 
+    </div>
+
+        <!-- Add a form for user input -->
+        <form action="/submit-webpage-photo">
+            <label for="Retro">
+                <input type="radio" name="modern-retro" id="Retro"> Retro
+            </label>
+            <label for="Modern">
+                <input type="radio" name="modern-retro" id="Modern"> Modern
+            </label>
+            <br>
+            <label for="Ugly">
+                <input type="checkbox" name="opinion" id="Ugly"> Ugly
+            </label>
+            <br>
+            <label for="Pretty">
+                <input type="checkbox" name="opinion" id="Pretty"> Pretty
+            </label>
+            <br>
+            <label for="Unsure">
+                <input type="checkbox" name="opinion" id="Unsure"> Unsure
+            </label>
+            <br>
+
+            <!-- Add a placeholder text for the input field -->
             <input type="text" placeholder="webpage url" required>
-            <button type="submit">submit
-            </buttontype>
+            <br>
+            
+            <!-- Add a submit button for the form -->
+            <button type="submit">
+                submit
+            </button>
         </form>
-        
+
     </main>
+
+    <footer>
+        <p><small>No Copyright -<a href="https://youtube.com">Nathan Exists</a></p></small>
+
+    </footer>
 </body>
 
 </html>
